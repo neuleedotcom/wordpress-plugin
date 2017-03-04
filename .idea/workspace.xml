@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e23bd99-1792-4a6b-b2cb-aea803b483c4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/class-neulee-activator.php" afterPath="$PROJECT_DIR$/includes/class-neulee-activator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/class-neulee-admin.php" afterPath="$PROJECT_DIR$/admin/class-neulee-admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/partials/neulee-admin-display.php" afterPath="$PROJECT_DIR$/admin/partials/neulee-admin-display.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/class-neulee.php" afterPath="$PROJECT_DIR$/includes/class-neulee.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,19 +23,25 @@
       <file leaf-file-name="neulee.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/neulee.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-374">
+            <state relative-caret-position="90">
               <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class-neulee-admin.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="class-neulee-admin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/class-neulee-admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="125" column="59" lean-forward="false" selection-start-line="125" selection-start-column="59" selection-end-line="125" selection-end-column="59" />
-              <folding />
+            <state relative-caret-position="389">
+              <caret line="300" column="22" lean-forward="false" selection-start-line="300" selection-start-column="22" selection-end-line="300" selection-end-column="22" />
+              <folding>
+                <marker date="1488641465641" expanded="true" signature="6919:6955" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+                <marker date="1488641465641" expanded="true" signature="6919:6964" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488641465641" expanded="true" signature="6919:6966" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488641465641" expanded="true" signature="6919:6984" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488641465641" expanded="true" signature="6919:7166" ph="SELECT * FRO... ${$loginTableName}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,8 +49,18 @@
       <file leaf-file-name="class-neulee.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/class-neulee.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state relative-caret-position="-309">
+              <caret line="164" column="73" lean-forward="false" selection-start-line="164" selection-start-column="73" selection-end-line="164" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class-neulee-loader.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/class-neulee-loader.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-192">
+              <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -57,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class-neulee-activator.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="class-neulee-activator.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/class-neulee-activator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="59" column="34" lean-forward="false" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+            <state relative-caret-position="65">
+              <caret line="38" column="57" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="57" />
               <folding>
                 <element signature="e#7#161#0#PHP" expanded="true" />
                 <marker date="1488578861422" expanded="true" signature="848:1127" ph="CREATE TABLE... ${$table_name}" />
@@ -71,11 +90,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="neulee-admin-display.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/partials/neulee-admin-display.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+              <folding>
+                <element signature="e#7#251#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="README.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -114,9 +145,10 @@
       <list>
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/neulee.php" />
-        <option value="$PROJECT_DIR$/admin/class-neulee-admin.php" />
-        <option value="$PROJECT_DIR$/includes/class-neulee.php" />
         <option value="$PROJECT_DIR$/includes/class-neulee-activator.php" />
+        <option value="$PROJECT_DIR$/includes/class-neulee.php" />
+        <option value="$PROJECT_DIR$/admin/partials/neulee-admin-display.php" />
+        <option value="$PROJECT_DIR$/admin/class-neulee-admin.php" />
       </list>
     </option>
   </component>
@@ -146,6 +178,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -206,8 +240,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -288,18 +320,19 @@
       <updated>1488573959975</updated>
       <workItem from="1488573962311" duration="1843000" />
       <workItem from="1488573148840" duration="338000" />
-      <workItem from="1488577236301" duration="1667000" />
+      <workItem from="1488577236301" duration="2208000" />
+      <workItem from="1488636634741" duration="4860000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3848000" />
+    <option name="totallyTimeSpent" value="9249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="740" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25725192" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2610687" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -331,6 +364,44 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/neulee.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/class-neulee-admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2106">
+          <caret line="125" column="59" lean-forward="false" selection-start-line="125" selection-start-column="59" selection-end-line="125" selection-end-column="59" />
+          <folding>
+            <marker date="1488641465641" expanded="true" signature="6919:6955" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+            <marker date="1488641465641" expanded="true" signature="6919:6964" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488641465641" expanded="true" signature="6919:6966" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488641465641" expanded="true" signature="6919:6984" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488641465641" expanded="true" signature="6919:7166" ph="SELECT * FRO... ${$loginTableName}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-neulee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neulee.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="252" lean-forward="false" selection-start-line="17" selection-start-column="252" selection-end-line="17" selection-end-column="252" />
           <folding />
@@ -341,7 +412,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2106">
           <caret line="125" column="59" lean-forward="false" selection-start-line="125" selection-start-column="59" selection-end-line="125" selection-end-column="59" />
-          <folding />
+          <folding>
+            <marker date="1488641465641" expanded="true" signature="6919:6955" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+            <marker date="1488641465641" expanded="true" signature="6919:6964" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488641465641" expanded="true" signature="6919:6966" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488641465641" expanded="true" signature="6919:6984" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488641465641" expanded="true" signature="6919:7166" ph="SELECT * FRO... ${$loginTableName}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -373,7 +450,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1488641465641" expanded="true" signature="6919:6955" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+            <marker date="1488641465641" expanded="true" signature="6919:6964" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488641465641" expanded="true" signature="6919:6966" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488641465641" expanded="true" signature="6919:6984" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488641465641" expanded="true" signature="6919:7166" ph="SELECT * FRO... ${$loginTableName}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -387,14 +470,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt" />
     <entry file="file://$PROJECT_DIR$/composer.json" />
-    <entry file="file://$PROJECT_DIR$/uninstall.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -403,18 +478,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-neulee.php">
+    <entry file="file://$PROJECT_DIR$/neulee.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/class-neulee-admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="125" column="59" lean-forward="false" selection-start-line="125" selection-start-column="59" selection-end-line="125" selection-end-column="59" />
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -422,7 +489,7 @@
     <entry file="file://$PROJECT_DIR$/README.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -438,22 +505,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neulee.php">
+    <entry file="file://$PROJECT_DIR$/uninstall.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-neulee-loader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192">
+          <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/partials/neulee-admin-display.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+          <folding>
+            <element signature="e#7#251#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/class-neulee-activator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="59" column="34" lean-forward="false" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+        <state relative-caret-position="65">
+          <caret line="38" column="57" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="57" />
           <folding>
             <element signature="e#7#161#0#PHP" expanded="true" />
             <marker date="1488578861422" expanded="true" signature="848:1127" ph="CREATE TABLE... ${$table_name}" />
             <marker date="1488578861422" expanded="true" signature="1174:1541" ph="CREATE TABLE... ${$loginTableName}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-neulee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-309">
+          <caret line="164" column="73" lean-forward="false" selection-start-line="164" selection-start-column="73" selection-end-line="164" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/class-neulee-admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="300" column="22" lean-forward="false" selection-start-line="300" selection-start-column="22" selection-end-line="300" selection-end-column="22" />
+          <folding>
+            <marker date="1488641465641" expanded="true" signature="6919:6955" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+            <marker date="1488641465641" expanded="true" signature="6919:6964" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488641465641" expanded="true" signature="6919:6966" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488641465641" expanded="true" signature="6919:6984" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488641465641" expanded="true" signature="6919:7166" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
         </state>
       </provider>
