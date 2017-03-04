@@ -23,14 +23,14 @@
         <?php settings_fields($this->plugin_name); ?>
 
         <?php
-            //Grab all options
-            $options = get_option($this->plugin_name);
+        //Grab all options
+        $options = get_option($this->plugin_name);
 
-            // Cleanup
-            $email = $options['email'];
-            $password = $options['password'];
+        // Cleanup
+        $email = $options['email'];
+        $password = $options['password'];
         ?>
-        <p><?php _e('Add a Neulee account for avoind the 5 packages limit per solutions', $this->plugin_name); ?></p>
+        <p><?php _e('Add a Neulee account for avoiding the 5 packages limit per solutions', $this->plugin_name); ?></p>
 
         <fieldset class="wp_cbf-admin-colors">
             <legend class="screen-reader-text"><span><?php _e('email', $this->plugin_name); ?></span></legend>
@@ -56,4 +56,41 @@
         <?php submit_button(__('Save all changes', $this->plugin_name), 'primary', 'submit', true); ?>
 
     </form>
+
+    <h2 class="nav-tab-wrapper"><?php _e('Your neulee accounts', $this->plugin_name); ?></h2>
+    <table class="wp-list-table widefat fixed striped">
+        <thead>
+        <tr>
+            <td>email</td>
+        </tr>
+        </thead>
+
+        <tbody>
+        <?php
+        if (!empty($loginList)) {
+            foreach ($loginList as $login) {
+                ?>
+                <tr>
+                    <td><?php echo $login->email; ?></td>
+                </tr>
+                <?php
+
+            }
+        } else {
+            ?>
+            <tr>
+                <td>
+                    You don't have any account saved. Login or register now to start using neulee without any limit
+                </td>
+            </tr>
+            <?php
+        }
+
+        ?>
+        </tbody>
+    </table>
+
+
+
+
 </div>

@@ -182,6 +182,17 @@ class Neulee_Admin
 
     public function display_plugin_setup_page()
     {
+        global $wpdb;
+
+
+        $loginTableName = $wpdb->prefix."neulee_login";
+
+        $loginList = $wpdb->get_results(
+            "SELECT * FROM $loginTableName"
+
+        );
+
+
         include_once('partials/neulee-admin-display.php');
     }
 
@@ -260,9 +271,8 @@ class Neulee_Admin
 
         $loginTableName = $wpdb->prefix."neulee_login";
 
-        $alreadyExistingUser = $wpdb->get_row(
-            "SELECT * FROM $loginTableName WHERE email = '".$valid['email']."'",
-            ARRAY_A
+        $alreadyExistingUser = $wpdb->get_results(
+            "SELECT * FROM $loginTableName WHERE email = '".$valid['email']."'"
         );
 
         if (empty($alreadyExistingUser)) {
@@ -282,7 +292,7 @@ class Neulee_Admin
             return $valid;
         }
 
-        if ($alreadyExistingUser['password'] != $valid['password']) {
+        if ($alreadyExistingUser->password != $valid['password']) {
             $wpdb->update(
                 $loginTableName,
                 array(
