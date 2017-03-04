@@ -143,12 +143,22 @@ class Neulee_Admin
          *        Administration Menus: http://codex.wordpress.org/Administration_Menus
          *
          */
+
+
         add_options_page(
-            'Neulee library manager',
-            'Neulee',
+            'Neulee Account',
+            'Neulee Account',
             'manage_options',
-            $this->plugin_name,
+            $this->plugin_name. '/account',
             array($this, 'display_plugin_setup_page')
+        );
+
+        add_options_page(
+            'Neulee Solution manager',
+            'Neulee Solution',
+            'manage_options',
+            $this->plugin_name. '/solution',
+            array($this, 'display_plugin_solution_page')
         );
     }
 
@@ -163,15 +173,19 @@ class Neulee_Admin
         /*
         *  Documentation : https://codex.wordpress.org/Plugin_API/Filter_Reference/plugin_action_links_(plugin_file_name)
         */
-        $settings_link = array(
-            '<a href="'.admin_url('options-general.php?page='.$this->plugin_name).'">'.__(
-                'Settings',
-                $this->plugin_name
-            ).'</a>',
-        );
 
-        return array_merge($settings_link, $links);
+        return $links;
 
+    }
+
+    /**
+     * Render the solution manager page for this plugin.
+     *
+     * @since    1.0.0
+     */
+    public function display_plugin_solution_page()
+    {
+        include_once('partials/neulee-admin-solution.php');
     }
 
     /**
@@ -179,7 +193,6 @@ class Neulee_Admin
      *
      * @since    1.0.0
      */
-
     public function display_plugin_setup_page()
     {
         global $wpdb;
