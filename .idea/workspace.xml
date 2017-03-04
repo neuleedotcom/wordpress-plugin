@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e23bd99-1792-4a6b-b2cb-aea803b483c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/partials/neulee-admin-solution.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/class-neulee-admin.php" afterPath="$PROJECT_DIR$/admin/class-neulee-admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/css/neulee-admin.css" afterPath="$PROJECT_DIR$/admin/css/neulee-admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/partials/neulee-admin-display.php" afterPath="$PROJECT_DIR$/admin/partials/neulee-admin-display.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/partials/neulee-admin-solution.php" afterPath="$PROJECT_DIR$/admin/partials/neulee-admin-solution.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/class-neulee-activator.php" afterPath="$PROJECT_DIR$/includes/class-neulee-activator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/class-neulee.php" afterPath="$PROJECT_DIR$/includes/class-neulee.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,7 +26,7 @@
       <file leaf-file-name="neulee.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/neulee.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="-849">
               <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
@@ -32,16 +36,17 @@
       <file leaf-file-name="class-neulee-admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/class-neulee-admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-144">
-              <caret line="159" column="42" lean-forward="false" selection-start-line="159" selection-start-column="42" selection-end-line="159" selection-end-column="42" />
+            <state relative-caret-position="-655">
+              <caret line="198" column="10" lean-forward="true" selection-start-line="198" selection-start-column="10" selection-end-line="198" selection-end-column="10" />
               <folding>
-                <marker date="1488647463563" expanded="true" signature="4817:4831" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488647463563" expanded="true" signature="4817:4846" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488647463563" expanded="true" signature="7335:7371" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
-                <marker date="1488647463563" expanded="true" signature="7335:7380" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488647463563" expanded="true" signature="7335:7382" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488647463563" expanded="true" signature="7335:7400" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488647463563" expanded="true" signature="7335:7561" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488653323909" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488653323909" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+                <marker date="1488653323909" expanded="true" signature="5303:5317" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488653323909" expanded="true" signature="5303:5332" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488653323909" expanded="true" signature="11942:11978" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+                <marker date="1488653323909" expanded="true" signature="11942:11987" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488653323909" expanded="true" signature="11942:11989" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488653323909" expanded="true" signature="11942:12007" ph="SELECT * FRO... ${$loginTableName}" />
               </folding>
             </state>
           </provider>
@@ -50,10 +55,13 @@
       <file leaf-file-name="neulee-admin-solution.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/partials/neulee-admin-solution.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+            <state relative-caret-position="107">
+              <caret line="78" column="33" lean-forward="false" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
               <folding>
                 <element signature="e#7#251#0#PHP" expanded="true" />
+                <element signature="e#2724#2730#1#HTML" expanded="true" />
+                <element signature="e#2982#2988#1#HTML" expanded="true" />
+                <element signature="e#3232#3238#1#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,8 +70,8 @@
       <file leaf-file-name="class-neulee.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/class-neulee.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="150" column="21" lean-forward="false" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="21" />
+            <state relative-caret-position="-687">
+              <caret line="164" column="85" lean-forward="false" selection-start-line="164" selection-start-column="85" selection-end-line="164" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -72,7 +80,7 @@
       <file leaf-file-name="class-neulee-loader.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/class-neulee-loader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-408">
+            <state relative-caret-position="1026">
               <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
               <folding />
             </state>
@@ -82,13 +90,25 @@
       <file leaf-file-name="class-neulee-activator.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/class-neulee-activator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="38" column="57" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="57" />
+            <state relative-caret-position="263">
+              <caret line="66" column="61" lean-forward="false" selection-start-line="66" selection-start-column="61" selection-end-line="66" selection-end-column="61" />
               <folding>
                 <element signature="e#7#161#0#PHP" expanded="true" />
-                <marker date="1488578861422" expanded="true" signature="848:1127" ph="CREATE TABLE... ${$table_name}" />
-                <marker date="1488578861422" expanded="true" signature="1174:1541" ph="CREATE TABLE... ${$loginTableName}" />
+                <marker date="1488652833873" expanded="true" signature="970:1249" ph="CREATE TABLE... ${$table_name}" />
+                <marker date="1488652833873" expanded="true" signature="1296:1663" ph="CREATE TABLE... ${$loginTableName}" />
+                <marker date="1488652833873" expanded="true" signature="1709:1882" ph="CREATE TABLE... ${$solutionTableName}" />
+                <marker date="1488652833873" expanded="true" signature="1927:2160" ph="CREATE TABLE... ${$packageTableName}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="neulee-admin.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/css/neulee-admin.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,21 +116,11 @@
       <file leaf-file-name="neulee-admin-display.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/partials/neulee-admin-display.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="60" />
+            <state relative-caret-position="303">
+              <caret line="51" column="46" lean-forward="false" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
               <folding>
                 <element signature="e#7#251#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -140,6 +150,11 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>email</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -148,10 +163,11 @@
       <list>
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/neulee.php" />
-        <option value="$PROJECT_DIR$/includes/class-neulee-activator.php" />
         <option value="$PROJECT_DIR$/includes/class-neulee.php" />
         <option value="$PROJECT_DIR$/admin/partials/neulee-admin-display.php" />
+        <option value="$PROJECT_DIR$/includes/class-neulee-activator.php" />
         <option value="$PROJECT_DIR$/admin/class-neulee-admin.php" />
+        <option value="$PROJECT_DIR$/admin/css/neulee-admin.css" />
         <option value="$PROJECT_DIR$/admin/partials/neulee-admin-solution.php" />
       </list>
     </option>
@@ -242,13 +258,31 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neulee" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neulee" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/projects/frontend" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
@@ -325,18 +359,19 @@
       <workItem from="1488573962311" duration="1843000" />
       <workItem from="1488573148840" duration="338000" />
       <workItem from="1488577236301" duration="2208000" />
-      <workItem from="1488636634741" duration="8198000" />
+      <workItem from="1488636634741" duration="8883000" />
+      <workItem from="1488649455421" duration="4189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12587000" />
+    <option name="totallyTimeSpent" value="17461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="740" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2610687" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26564884" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -368,6 +403,111 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/neulee.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/class-neulee-admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3438">
+          <caret line="191" column="60" lean-forward="false" selection-start-line="191" selection-start-column="60" selection-end-line="191" selection-end-column="60" />
+          <folding>
+            <marker date="1488653323909" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+            <marker date="1488653323909" expanded="true" signature="5303:5317" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="5303:5332" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="11942:11978" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+            <marker date="1488653323909" expanded="true" signature="11942:11987" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="11942:11989" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="11942:12007" ph="SELECT * FRO... ${$loginTableName}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/partials/neulee-admin-solution.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#251#0#PHP" expanded="true" />
+            <element signature="e#2724#2730#1#HTML" expanded="true" />
+            <element signature="e#2982#2988#1#HTML" expanded="true" />
+            <element signature="e#3232#3238#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-neulee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2502">
+          <caret line="150" column="21" lean-forward="false" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-neulee-loader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-neulee-activator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="38" />
+          <folding>
+            <element signature="e#7#161#0#PHP" expanded="true" />
+            <marker date="1488652833873" expanded="true" signature="970:1249" ph="CREATE TABLE... ${$table_name}" />
+            <marker date="1488652833873" expanded="true" signature="1296:1663" ph="CREATE TABLE... ${$loginTableName}" />
+            <marker date="1488652833873" expanded="true" signature="1709:1882" ph="CREATE TABLE... ${$solutionTableName}" />
+            <marker date="1488652833873" expanded="true" signature="1927:2160" ph="CREATE TABLE... ${$packageTableName}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/partials/neulee-admin-display.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="22" column="53" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="53" />
+          <folding>
+            <element signature="e#7#251#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uninstall.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neulee.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -379,13 +519,14 @@
         <state relative-caret-position="2106">
           <caret line="125" column="59" lean-forward="false" selection-start-line="125" selection-start-column="59" selection-end-line="125" selection-end-column="59" />
           <folding>
-            <marker date="1488647463563" expanded="true" signature="4817:4831" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="4817:4846" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7371" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7380" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7382" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7400" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7561" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+            <marker date="1488653323909" expanded="true" signature="5303:5317" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="5303:5332" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="11942:11978" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+            <marker date="1488653323909" expanded="true" signature="11942:11987" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="11942:11989" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="11942:12007" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
         </state>
       </provider>
@@ -419,13 +560,14 @@
         <state relative-caret-position="2106">
           <caret line="125" column="59" lean-forward="false" selection-start-line="125" selection-start-column="59" selection-end-line="125" selection-end-column="59" />
           <folding>
-            <marker date="1488647463563" expanded="true" signature="4817:4831" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="4817:4846" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7371" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7380" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7382" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7400" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7561" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+            <marker date="1488653323909" expanded="true" signature="5303:5317" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="5303:5332" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="11942:11978" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+            <marker date="1488653323909" expanded="true" signature="11942:11987" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="11942:11989" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="11942:12007" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
         </state>
       </provider>
@@ -459,13 +601,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1488647463563" expanded="true" signature="4817:4831" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="4817:4846" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7371" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7380" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7382" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7400" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7561" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+            <marker date="1488653323909" expanded="true" signature="5303:5317" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="5303:5332" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="11942:11978" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+            <marker date="1488653323909" expanded="true" signature="11942:11987" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="11942:11989" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="11942:12007" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
         </state>
       </provider>
@@ -484,14 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neulee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -523,66 +658,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-neulee-activator.php">
+    <entry file="file://$PROJECT_DIR$/includes/class-neulee-loader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="38" column="57" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="57" />
-          <folding>
-            <element signature="e#7#161#0#PHP" expanded="true" />
-            <marker date="1488578861422" expanded="true" signature="848:1127" ph="CREATE TABLE... ${$table_name}" />
-            <marker date="1488578861422" expanded="true" signature="1174:1541" ph="CREATE TABLE... ${$loginTableName}" />
-          </folding>
+        <state relative-caret-position="1026">
+          <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-neulee-loader.php">
+    <entry file="file://$PROJECT_DIR$/neulee.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+        <state relative-caret-position="-849">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/class-neulee.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="150" column="21" lean-forward="false" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="21" />
+        <state relative-caret-position="-687">
+          <caret line="164" column="85" lean-forward="false" selection-start-line="164" selection-start-column="85" selection-end-line="164" selection-end-column="85" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/class-neulee-admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret line="159" column="42" lean-forward="false" selection-start-line="159" selection-start-column="42" selection-end-line="159" selection-end-column="42" />
-          <folding>
-            <marker date="1488647463563" expanded="true" signature="4817:4831" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="4817:4846" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7371" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7380" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7382" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7400" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488647463563" expanded="true" signature="7335:7561" ph="SELECT * FRO... ${$loginTableName}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/partials/neulee-admin-display.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="60" />
+        <state relative-caret-position="303">
+          <caret line="51" column="46" lean-forward="false" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
           <folding>
             <element signature="e#7#251#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/css/neulee-admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-neulee-activator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="66" column="61" lean-forward="false" selection-start-line="66" selection-start-column="61" selection-end-line="66" selection-end-column="61" />
+          <folding>
+            <element signature="e#7#161#0#PHP" expanded="true" />
+            <marker date="1488652833873" expanded="true" signature="970:1249" ph="CREATE TABLE... ${$table_name}" />
+            <marker date="1488652833873" expanded="true" signature="1296:1663" ph="CREATE TABLE... ${$loginTableName}" />
+            <marker date="1488652833873" expanded="true" signature="1709:1882" ph="CREATE TABLE... ${$solutionTableName}" />
+            <marker date="1488652833873" expanded="true" signature="1927:2160" ph="CREATE TABLE... ${$packageTableName}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/class-neulee-admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-655">
+          <caret line="198" column="10" lean-forward="true" selection-start-line="198" selection-start-column="10" selection-end-line="198" selection-end-column="10" />
+          <folding>
+            <marker date="1488653323909" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+            <marker date="1488653323909" expanded="true" signature="5303:5317" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="5303:5332" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="11942:11978" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+            <marker date="1488653323909" expanded="true" signature="11942:11987" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="11942:11989" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488653323909" expanded="true" signature="11942:12007" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/partials/neulee-admin-solution.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        <state relative-caret-position="107">
+          <caret line="78" column="33" lean-forward="false" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
           <folding>
             <element signature="e#7#251#0#PHP" expanded="true" />
+            <element signature="e#2724#2730#1#HTML" expanded="true" />
+            <element signature="e#2982#2988#1#HTML" expanded="true" />
+            <element signature="e#3232#3238#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -20,11 +20,11 @@
     <h2 class="nav-tab-wrapper"><?php _e('Neulee login', $this->plugin_name); ?></h2>
 
     <form method="post" name="login" action="options.php">
-        <?php settings_fields($this->plugin_name); ?>
+        <?php settings_fields($this->plugin_name.'login'); ?>
 
         <?php
         //Grab all options
-        $options = get_option($this->plugin_name);
+        $options = get_option($this->plugin_name.'login');
 
         // Cleanup
         $email = $options['email'];
@@ -37,7 +37,7 @@
             <label for="<?php echo $this->plugin_name; ?>-login_background_color">
                 <span><?php esc_attr_e('Email', $this->plugin_name); ?></span>
                 <input type="text" class="<?php echo $this->plugin_name; ?>-email"
-                       id="<?php echo $this->plugin_name; ?>-email" name="<?php echo $this->plugin_name; ?>[email]"
+                       id="<?php echo $this->plugin_name; ?>-email" name="<?php echo 'login'; ?>[email]"
                        value="<?php echo $email; ?>"/>
             </label>
         </fieldset>
@@ -49,7 +49,7 @@
                 <span><?php esc_attr_e('Password', $this->plugin_name); ?></span>
                 <input type="text" class="<?php echo $this->plugin_name; ?>-password"
                        id="<?php echo $this->plugin_name; ?>-password"
-                       name="<?php echo $this->plugin_name; ?>[password]" value="<?php echo $password; ?>"/>
+                       name="<?php echo 'login'; ?>[password]" value="<?php echo $password; ?>"/>
             </label>
         </fieldset>
 

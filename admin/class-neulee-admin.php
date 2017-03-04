@@ -23,7 +23,9 @@
 class Neulee_Admin
 {
 
-    const neulee_login_url = 'http://neulee.com/api/login';
+    const neulee_login_url    = 'http://neulee.com/api/login';
+    const neulee_search_url   = 'http://neulee.com/api/search';
+    const neulee_generate_url = 'http://neulee.com/api/generate';
 
     /**
      * The ID of this plugin.
@@ -149,7 +151,7 @@ class Neulee_Admin
             'Neulee Account',
             'Neulee Account',
             'manage_options',
-            $this->plugin_name. '/account',
+            $this->plugin_name.'/account',
             array($this, 'display_plugin_setup_page')
         );
 
@@ -157,7 +159,7 @@ class Neulee_Admin
             'Neulee Solution manager',
             'Neulee Solution',
             'manage_options',
-            $this->plugin_name. '/solution',
+            $this->plugin_name.'/solution',
             array($this, 'display_plugin_solution_page')
         );
     }
@@ -185,6 +187,24 @@ class Neulee_Admin
      */
     public function display_plugin_solution_page()
     {
+
+        global $wpdb;
+
+
+        $solutionTableName = $wpdb->prefix."neulee_solutions";
+
+        $solutionList = $wpdb->get_results(
+            "SELECT * FROM $solutionTableName"
+
+        );
+
+        $packageTableName = $wpdb->prefix."neulee_search";
+
+        $packageList = $wpdb->get_results(
+            "SELECT * FROM $packageTableName"
+
+        );
+
         include_once('partials/neulee-admin-solution.php');
     }
 
@@ -207,6 +227,136 @@ class Neulee_Admin
 
 
         include_once('partials/neulee-admin-display.php');
+    }
+
+    /**
+     * @param $input
+     *
+     * @return array
+     */
+    public function search($input)
+    {
+        global $wpdb;
+
+
+        $valid = [];
+
+        $valid['term'] = sanitize_text_field($input['term']);
+
+
+        if (empty($valid['term'])) { // if user insert a HEX color with #
+            add_settings_error(
+                'search_empty_field',                     // Setting title
+                'search_empty_field_error',            // Error ID
+                'Please insert a valid search term',     // Error message
+                'error'                         // Type of message
+            );
+
+            return $valid;
+        }
+
+        $searchTable = $wpdb->prefix.'neulee_search';
+        $delete = $wpdb->query("TRUNCATE TABLE $searchTable");
+
+        if (!$delete) { // if user insert a HEX color with #
+            add_settings_error(
+                'search_empty_field',                     // Setting title
+                'search_empty_field_error',            // Error ID
+                'Could not empty search database table...',     // Error message
+                'error'                         // Type of message
+            );
+
+            return $valid;
+        }
+
+        $postBody = [
+            'term' => $valid['term'],
+        ];
+
+        $response = wp_remote_post(
+            self::neulee_search_url,
+            array(
+                'method' => 'POST',
+                'timeout' => 45,
+                'redirection' => 5,
+                'httpversion' => '1.0',
+                'blocking' => true,
+                'headers' => array('Content-Type' => 'application/json; charset=utf-8'),
+                'body' => json_encode($postBody),
+                'cookies' => array(),
+            )
+        );
+
+
+        if (is_wp_error($response)) {
+            $error_message = $response->get_error_message();
+
+            add_settings_error(
+                'search_neulee_error',                     // Setting title
+                'search_neulee_error',            // Error ID
+                $error_message,     // Error message
+                'error'                         // Type of message
+            );
+
+            return $valid;
+        }
+        $response = wp_remote_retrieve_body($response);
+
+        $data = json_decode($response, true);
+
+        if ($data['status'] != 'success') {
+            add_settings_error(
+                'search_neulee_error',                     // Setting title
+                'search_neulee_error',            // Error ID
+                $data['reason'],     // Error message
+                'error'                         // Type of message
+            );
+
+            return $valid;
+
+        }
+
+        $result = $data['results'];
+
+        if (!empty($result)) {
+            foreach ($result as $package) {
+                if (!empty($package['versions'])) {
+                    $versions = $package['versions'];
+
+                    foreach ($versions as $version) {
+                        $wpdb->insert(
+                            $searchTable,
+                            array(
+                                'package_name' => $package['name'],
+                                'package' => $package['fullname'],
+                                'version' => $version,
+                            ),
+                            array(
+                                '%s',
+                                '%s',
+                                '%s',
+                            )
+                        );
+                    }
+                } else {
+                    $wpdb->insert(
+                        $searchTable,
+                        array(
+                            'package_name' => $package['name'],
+                            'package' => $package['fullname'],
+                            'version' => '',
+                        ),
+                        array(
+                            '%s',
+                            '%s',
+                            '%s',
+                        )
+                    );
+                }
+            }
+        }
+
+        return $valid;
     }
 
     /**
@@ -327,8 +477,9 @@ class Neulee_Admin
     /**
      *
      */
-    public function login_add()
+    public function neulee_form_processor()
     {
-        register_setting($this->plugin_name, $this->plugin_name, array($this, 'loginValidate'));
+        register_setting($this->plugin_name.'login', 'login', array($this, 'loginValidate'));
+        register_setting($this->plugin_name.'search', 'search', array($this, 'search'));
     }
 }

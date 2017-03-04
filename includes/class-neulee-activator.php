@@ -38,6 +38,8 @@ class Neulee_Activator {
 
         $loginTableName = $wpdb->prefix . "neulee_login";
         $solutionTableName = $wpdb->prefix . "neulee_solutions";
+        $packageTableName = $wpdb->prefix . 'neulee_packages';
+        $seachTableName = $wpdb->prefix . 'neulee_search';
 
         $charset_collate = $wpdb->get_charset_collate();
 
@@ -56,7 +58,20 @@ class Neulee_Activator {
                           PRIMARY KEY  (id)
                         ) $charset_collate;";
 
+        $packageTable = "CREATE TABLE $packageTableName (
+                          package varchar(100) NOT NULL,
+                          version varchar(100)          
+                        ) $charset_collate;";
+
+        $searchTable = "CREATE TABLE $seachTableName (
+                          package_name varchar(100) NOT NULL,
+                          package varchar(100) NOT NULL,
+                          version varchar(100)          
+                        ) $charset_collate;";
+
         dbDelta( $loginTable );
         dbDelta( $solutionTable );
+        dbDelta( $packageTable );
+        dbDelta( $searchTable );
 	}
 }
