@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e23bd99-1792-4a6b-b2cb-aea803b483c4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/class-neulee-admin.php" afterPath="$PROJECT_DIR$/admin/class-neulee-admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/partials/neulee-admin-solution.php" afterPath="$PROJECT_DIR$/admin/partials/neulee-admin-solution.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/class-neulee-activator.php" afterPath="$PROJECT_DIR$/includes/class-neulee-activator.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,43 +21,46 @@
       <file leaf-file-name="neulee.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/neulee.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="-360">
               <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class-neulee-admin.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="class-neulee-admin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/class-neulee-admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="209" column="28" lean-forward="false" selection-start-line="209" selection-start-column="8" selection-end-line="209" selection-end-column="28" />
+            <state relative-caret-position="-127">
+              <caret line="671" column="0" lean-forward="false" selection-start-line="671" selection-start-column="0" selection-end-line="671" selection-end-column="0" />
               <folding>
-                <marker date="1488716518262" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488716518262" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
-                <marker date="1488716518262" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
-                <marker date="1488716518262" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488716518262" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488716518262" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488716518262" expanded="true" signature="10703:10775" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488716518262" expanded="true" signature="10703:10791" ph="SELECT * FRO... ${$packageTableName}" />
-                <marker date="1488716518262" expanded="true" signature="10703:10813" ph="SELECT * FRO... ${$packageTableName}" />
-                <marker date="1488716518262" expanded="true" signature="10703:10922" ph="SELECT * FRO... ${$packageTableName}" />
-                <marker date="1488716518262" expanded="true" signature="13962:13998" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
-                <marker date="1488716518262" expanded="true" signature="13962:14007" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488716518262" expanded="true" signature="13962:14009" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488716518262" expanded="true" signature="13962:14027" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488737794781" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488737794781" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+                <marker date="1488737794781" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
+                <marker date="1488737794781" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488737794781" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488737794781" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488737794781" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488737794781" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
+                <marker date="1488737794781" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
+                <marker date="1488737794781" expanded="true" signature="10706:10925" ph="SELECT * FRO... ${$packageTableName}" />
+                <marker date="1488737794781" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
+                <marker date="1488737794781" expanded="true" signature="11828:11860" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488737794781" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488737794781" expanded="true" signature="21027:21063" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+                <marker date="1488737794781" expanded="true" signature="21027:21072" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488737794781" expanded="true" signature="21027:21074" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488737794781" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="neulee-admin-solution.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="neulee-admin-solution.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/partials/neulee-admin-solution.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="61" column="88" lean-forward="false" selection-start-line="61" selection-start-column="88" selection-end-line="61" selection-end-column="88" />
+            <state relative-caret-position="144">
+              <caret line="66" column="65" lean-forward="false" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="65" />
               <folding>
                 <element signature="e#7#251#0#PHP" expanded="true" />
               </folding>
@@ -70,7 +71,7 @@
       <file leaf-file-name="class-neulee.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/class-neulee.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2754">
+            <state relative-caret-position="-673">
               <caret line="164" column="85" lean-forward="false" selection-start-line="164" selection-start-column="85" selection-end-line="164" selection-end-column="85" />
               <folding />
             </state>
@@ -153,6 +154,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>email</find>
+      <find>search</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -361,12 +363,12 @@
       <workItem from="1488577236301" duration="2208000" />
       <workItem from="1488636634741" duration="8883000" />
       <workItem from="1488649455421" duration="4339000" />
-      <workItem from="1488713635556" duration="1996000" />
+      <workItem from="1488713635556" duration="5624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19607000" />
+    <option name="totallyTimeSpent" value="23235000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="740" extended-state="0" />
@@ -434,20 +436,23 @@
         <state relative-caret-position="3420">
           <caret line="198" column="10" lean-forward="true" selection-start-line="198" selection-start-column="10" selection-end-line="198" selection-end-column="10" />
           <folding>
-            <marker date="1488716518262" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
-            <marker date="1488716518262" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10775" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10791" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10813" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10922" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:13998" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14007" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14009" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14027" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+            <marker date="1488737794781" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10925" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="11828:11860" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21063" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21072" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21074" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
         </state>
       </provider>
@@ -542,20 +547,23 @@
         <state relative-caret-position="3438">
           <caret line="191" column="60" lean-forward="false" selection-start-line="191" selection-start-column="60" selection-end-line="191" selection-end-column="60" />
           <folding>
-            <marker date="1488716518262" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
-            <marker date="1488716518262" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10775" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10791" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10813" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10922" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:13998" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14007" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14009" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14027" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+            <marker date="1488737794781" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10925" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="11828:11860" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21063" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21072" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21074" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
         </state>
       </provider>
@@ -649,20 +657,23 @@
         <state relative-caret-position="2106">
           <caret line="125" column="59" lean-forward="false" selection-start-line="125" selection-start-column="59" selection-end-line="125" selection-end-column="59" />
           <folding>
-            <marker date="1488716518262" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
-            <marker date="1488716518262" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10775" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10791" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10813" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10922" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:13998" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14007" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14009" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14027" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+            <marker date="1488737794781" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10925" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="11828:11860" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21063" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21072" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21074" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
         </state>
       </provider>
@@ -696,20 +707,23 @@
         <state relative-caret-position="2106">
           <caret line="125" column="59" lean-forward="false" selection-start-line="125" selection-start-column="59" selection-end-line="125" selection-end-column="59" />
           <folding>
-            <marker date="1488716518262" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
-            <marker date="1488716518262" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10775" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10791" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10813" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10922" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:13998" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14007" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14009" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14027" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+            <marker date="1488737794781" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10925" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="11828:11860" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21063" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21072" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21074" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
         </state>
       </provider>
@@ -743,20 +757,23 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1488716518262" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
-            <marker date="1488716518262" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10775" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10791" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10813" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10922" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:13998" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14007" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14009" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14027" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+            <marker date="1488737794781" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10925" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="11828:11860" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21063" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21072" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21074" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
         </state>
       </provider>
@@ -813,22 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neulee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-neulee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2754">
-          <caret line="164" column="85" lean-forward="false" selection-start-line="164" selection-start-column="85" selection-end-line="164" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/partials/neulee-admin-display.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
@@ -847,6 +848,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-neulee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-673">
+          <caret line="164" column="85" lean-forward="false" selection-start-line="164" selection-start-column="85" selection-end-line="164" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neulee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/class-neulee-activator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-331">
@@ -861,35 +878,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/class-neulee-admin.php">
+    <entry file="file://$PROJECT_DIR$/admin/partials/neulee-admin-solution.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="209" column="28" lean-forward="false" selection-start-line="209" selection-start-column="8" selection-end-line="209" selection-end-column="28" />
+        <state relative-caret-position="144">
+          <caret line="66" column="65" lean-forward="false" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="65" />
           <folding>
-            <marker date="1488716518262" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
-            <marker date="1488716518262" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10775" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10791" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10813" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="10703:10922" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:13998" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14007" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14009" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488716518262" expanded="true" signature="13962:14027" ph="SELECT * FRO... ${$loginTableName}" />
+            <element signature="e#7#251#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/partials/neulee-admin-solution.php">
+    <entry file="file://$PROJECT_DIR$/admin/class-neulee-admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="61" column="88" lean-forward="false" selection-start-line="61" selection-start-column="88" selection-end-line="61" selection-end-column="88" />
+        <state relative-caret-position="-127">
+          <caret line="671" column="0" lean-forward="false" selection-start-line="671" selection-start-column="0" selection-end-line="671" selection-end-column="0" />
           <folding>
-            <element signature="e#7#251#0#PHP" expanded="true" />
+            <marker date="1488737794781" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+            <marker date="1488737794781" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="10706:10925" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488737794781" expanded="true" signature="11828:11860" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21063" ph="SELECT * FRO... ${$wpdb-&gt;links}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21072" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21074" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488737794781" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
         </state>
       </provider>

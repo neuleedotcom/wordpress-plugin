@@ -370,6 +370,9 @@ class Neulee_Admin
             }
         }
 
+
+
+
         return $valid;
     }
 
@@ -427,6 +430,242 @@ class Neulee_Admin
                 '%s',
             )
         );
+
+        return $valid;
+    }
+
+    public function generate($input)
+    {
+        global $wpdb;
+
+
+        $valid = [];
+
+        $valid['user'] = $input['user'];
+
+        $token = null;
+
+        $packageTableName = $wpdb->prefix."neulee_packages";
+
+        $packages = $wpdb->get_results(
+            "SELECT * FROM $packageTableName "
+        );
+
+        if(empty($packages) || count($packages) == 0)
+        {
+            add_settings_error(
+                'generate_neulee_error',                     // Setting title
+                'generate_neulee_error_empty_packages',            // Error ID
+                'Could not generate an empty solution',     // Error message
+                'error'                         // Type of message
+            );
+
+            return $valid;
+        }
+
+        if(!empty($valid['user']))
+        {
+
+
+            $loginTableName = $wpdb->prefix."neulee_login";
+
+            $userFetch = $wpdb->get_results(
+                "SELECT * FROM $loginTableName WHERE email = '".$valid['user']."'"
+            );
+
+            if(empty($userFetch))
+            {
+                add_settings_error(
+                    'generate_neulee_error',                     // Setting title
+                    'generate_neulee_error_user_not_found',            // Error ID
+                    'User not found',     // Error message
+                    'error'                         // Type of message
+                );
+
+                return $valid;
+            }
+
+            $userObj = $userFetch[0];
+
+            $postBody = [
+                'email' => $userObj->email,
+                'password' => $userObj->password,
+            ];
+
+            $response = wp_remote_post(
+                self::neulee_login_url,
+                array(
+                    'method' => 'POST',
+                    'timeout' => 45,
+                    'redirection' => 5,
+                    'httpversion' => '1.0',
+                    'blocking' => true,
+                    'headers' => array('Content-Type' => 'application/json; charset=utf-8'),
+                    'body' => json_encode($postBody),
+                    'cookies' => array(),
+                )
+            );
+
+
+            if (is_wp_error($response)) {
+                $error_message = $response->get_error_message();
+
+                add_settings_error(
+                    'generate_neulee_error',                     // Setting title
+                    'generate_login_neulee_error',            // Error ID
+                    $error_message,     // Error message
+                    'error'                         // Type of message
+                );
+
+                return $valid;
+            }
+            $response = wp_remote_retrieve_body($response);
+
+            $data = json_decode($response, true);
+
+            if ($data['status'] != 'success') {
+                add_settings_error(
+                    'generate_login_neulee_error',                     // Setting title
+                    'generate_login_neulee_error',            // Error ID
+                    $data['reason'],     // Error message
+                    'error'                         // Type of message
+                );
+
+                return $valid;
+            }
+
+            $token = $data['token'];
+
+            if(empty($token))
+            {
+                add_settings_error(
+                'generate_login_neulee_error',                     // Setting title
+                    'generate_login_neulee_error',            // Error ID
+                    'User token is empty',     // Error message
+                    'error'
+                );
+
+                return $valid;
+            }
+
+        }
+
+
+        $packagesJson = [];
+
+        foreach($packages as $package)
+        {
+            $temp['fullname'] = $package->package;
+            $temp['version'] = $package->version;
+
+            $packagesJson[] = $temp;
+        }
+
+        $postBody = [];
+
+        $postBody['packages'] = $packagesJson;
+
+        if(!empty($token))
+        {
+            $postBody['token'] = $token;
+        }
+
+
+        $response = wp_remote_post(
+            self::neulee_generate_url,
+            array(
+                'method' => 'POST',
+                'timeout' => 45,
+                'redirection' => 5,
+                'httpversion' => '1.0',
+                'blocking' => true,
+                'headers' => array('Content-Type' => 'application/json; charset=utf-8'),
+                'body' => json_encode($postBody),
+                'cookies' => array(),
+            )
+        );
+
+
+        if (is_wp_error($response)) {
+            $error_message = $response->get_error_message();
+
+            add_settings_error(
+                'generate_neulee_error',                     // Setting title
+                'generate_neulee_error_generic_error',            // Error ID
+                $error_message,     // Error message
+                'error'                         // Type of message
+            );
+
+            return $valid;
+        }
+        $response = wp_remote_retrieve_body($response);
+
+        $data = json_decode($response, true);
+
+        if ($data['status'] != 'success') {
+            add_settings_error(
+                'generate_neulee_error',                     // Setting title
+                'generate_neulee_error_generic_error',            // Error ID
+                $data['reason'],     // Error message
+                'error'                         // Type of message
+            );
+
+            return $valid;
+
+        }
+
+        $solutionUrl = $data['solution_url'];
+        $providerUrl = $data['provider_url'];
+
+        $solutionTableName = $wpdb->prefix."neulee_solutions";
+
+        $wpdb->insert(
+            $solutionTableName,
+            array(
+                'solution_url' => $solutionUrl,
+                'provider_url' => $providerUrl,
+                'solution_active' => 'Y'
+            ),
+            array(
+                '%s',
+                '%s',
+                '%s'
+            )
+        );
+
+
+        $searchTable = $wpdb->prefix.'neulee_search';
+
+        $wpdb->query("TRUNCATE TABLE $searchTable");
+        $wpdb->query("TRUNCATE TABLE $packageTableName");
+
+        return $valid;
+    }
+
+    public function deletePackage($input)
+    {
+        $valid = [];
+
+        $valid['fullname'] = sanitize_text_field($input['fullname']);
+        $valid['version'] = sanitize_text_field($input['version']);
+
+        if(empty($valid['fullname']))
+        {
+            add_settings_error(
+                'login_empty_field',                     // Setting title
+                'login_empty_field_error',            // Error ID
+                'Please fill all the fields',     // Error message
+                'error'                         // Type of message
+            );
+
+            return $valid;
+        }
+
+        global $wpdb;
+
+        $packageTableName = $wpdb->prefix."neulee_packages";
+
+        $wpdb->delete($packageTableName, array( 'package' => $valid['fullname'], 'version' => $valid['version'] ), array('%s', '%s') );
 
         return $valid;
     }
@@ -551,9 +790,19 @@ class Neulee_Admin
      */
     public function neulee_form_processor()
     {
+        /** neulee login form */
         register_setting($this->plugin_name.'login', 'login', array($this, 'loginValidate'));
+
+        /** neulee search form */
         register_setting($this->plugin_name.'search', 'search', array($this, 'search'));
+
+        /** addtosolution form */
         register_setting($this->plugin_name.'solution', 'solution', array($this, 'addToSolution'));
 
+        /** generate solution form */
+        register_setting($this->plugin_name.'generate', 'generate', array($this, 'generate'));
+
+        /** delete package form */
+        register_setting($this->plugin_name.'deletePackage', 'deletePackage', array($this, 'deletePackage'));
     }
 }
