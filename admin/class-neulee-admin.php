@@ -205,6 +205,20 @@ class Neulee_Admin
 
         );
 
+        $solPackageTableName = $wpdb->prefix."neulee_packages";
+
+        $solutionPackageList =  $wpdb->get_results(
+            "SELECT * FROM $solPackageTableName"
+
+        );
+
+        $loginTableName = $wpdb->prefix."neulee_login";
+
+        $loginList = $wpdb->get_results(
+            "SELECT * FROM $loginTableName"
+
+        );
+
         include_once('partials/neulee-admin-solution.php');
     }
 
@@ -364,6 +378,64 @@ class Neulee_Admin
      *
      * @return array
      */
+    public function addToSolution($input)
+    {
+        $valid = [];
+
+        $valid['fullname'] = sanitize_text_field($input['fullname']);
+        $valid['version'] = sanitize_text_field($input['version']);
+
+        if(empty($valid['fullname']))
+        {
+            add_settings_error(
+                'login_empty_field',                     // Setting title
+                'login_empty_field_error',            // Error ID
+                'Please fill all the fields',     // Error message
+                'error'                         // Type of message
+            );
+
+            return $valid;
+        }
+
+        global $wpdb;
+
+        $packageTableName = $wpdb->prefix."neulee_packages";
+
+        $alreadyExistingPackage = $wpdb->get_results(
+            "SELECT * FROM $packageTableName WHERE package = '".$valid['fullname']."' and version = '".$valid['version']."'"
+        );
+
+        if (!empty($alreadyExistingPackage)) {
+            add_settings_error(
+                'solution_added_twice',                     // Setting title
+                'solution_added_twice_error',            // Error ID
+                'Package already added in the solution',     // Error message
+                'error'                         // Type of message
+            );
+
+            return $valid;
+        }
+
+        $wpdb->insert(
+            $packageTableName,
+            array(
+                'package' => $valid['fullname'],
+                'version' => $valid['version'],
+            ),
+            array(
+                '%s',
+                '%s',
+            )
+        );
+
+        return $valid;
+    }
+
+    /**
+     * @param $input
+     *
+     * @return array
+     */
     public function loginValidate($input)
     {
         $valid = [];
@@ -481,5 +553,7 @@ class Neulee_Admin
     {
         register_setting($this->plugin_name.'login', 'login', array($this, 'loginValidate'));
         register_setting($this->plugin_name.'search', 'search', array($this, 'search'));
+        register_setting($this->plugin_name.'solution', 'solution', array($this, 'addToSolution'));
+
     }
 }

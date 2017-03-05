@@ -32,8 +32,6 @@ class Neulee_Activator {
 	 * @since    1.0.0
 	 */
 	public static function activate() {
-        //create login table
-
         global $wpdb;
 
         $loginTableName = $wpdb->prefix . "neulee_login";

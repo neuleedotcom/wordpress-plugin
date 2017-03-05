@@ -51,6 +51,22 @@
         </tbody>
     </table>
 
+    <h2 class="nav-tab-wrapper"><?php _e('Create new solutions', $this->plugin_name.'packages'); ?></h2>
+    <form method="post" name="login" action="options.php">
+        <?php
+        if (!empty($solutionPackageList)) {
+            foreach ($solutionPackageList as $solPackage) {
+                ?>
+                <fieldset class="wp_cbf-admin-colors">
+                    <label for="<?php echo $solPackage->package; ?>-term">
+                        <span><?php echo $solPackage->package.' - '.$solPackage->version; ?></span>
+                    </label>
+                </fieldset>
+                <?php
+            }
+        }
+        ?>
+    </form>
     <h2 class="nav-tab-wrapper"><?php _e('Search packages', $this->plugin_name.'packages'); ?></h2>
     <form method="post" name="login" action="options.php">
         <?php settings_fields($this->plugin_name.'search'); ?>
@@ -78,7 +94,7 @@
             ?>
             <div class="resultbox">
                 <form method="post" name="login" action="options.php" id="packageform">
-                    <?php settings_fields($this->plugin_name.'package'); ?>
+                    <?php settings_fields($this->plugin_name.'solution'); ?>
                     <fieldset class="wp_cbf-admin-colors">
                         <label>
                             <span>Package</span><b>&nbsp;<?php echo $package->package_name; ?></b>
@@ -94,6 +110,12 @@
                             <span>Version</span><b>&nbsp;<?php echo $package->version; ?></b>
                         </label>
                     </fieldset>
+                    <input type="hidden" class="<?php echo $this->plugin_name; ?>-fullname"
+                           id="<?php echo $this->plugin_name; ?>-fullname" name="<?php echo 'solution'; ?>[fullname]"
+                           value="<?php echo $package->package; ?>"/>
+                    <input type="hidden" class="<?php echo $this->plugin_name; ?>-version"
+                           id="<?php echo $this->plugin_name; ?>-version" name="<?php echo 'solution'; ?>[version]"
+                           value="<?php echo $package->version; ?>"/>
                     <?php submit_button(__('Add to solution', $this->plugin_name), 'primary', 'submit', true); ?>
                 </form>
             </div>
