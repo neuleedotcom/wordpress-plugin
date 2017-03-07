@@ -98,6 +98,24 @@ class Neulee_Public {
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/neulee-public.js', array( 'jquery' ), $this->version, false );
 
-	}
+		/**
+         * load neulee user solutions in header
+         *
+         */
+        global $wpdb;
+
+        $solutionTableName = $wpdb->prefix . "neulee_solutions";
+
+        $solutions = $wpdb->get_results(
+            "SELECT * FROM $solutionTableName WHERE solution_active = 'Y'"
+        );
+
+        if (!empty($solutions) && is_array($solutions) && count($solutions) > 0) {
+            foreach($solutions as $solution)
+            {
+                wp_enqueue_script( rand(0, 1000), $solution->provider_url, false);
+            }
+        }
+        }
 
 }

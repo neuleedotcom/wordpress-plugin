@@ -786,6 +786,51 @@ class Neulee_Admin
     }
 
     /**
+     * @param $input
+     *
+     * @return array
+     */
+    public function solutionActive($input)
+    {
+        $valid = [];
+
+        $valid['sol_id'] = (int)$input['sol_id'];
+        $valid['active'] = $input['status'];
+
+
+        if (empty($valid['sol_id']) || empty($valid['active'])) {
+            add_settings_error(
+                'solution_activate_empty_field',                     // Setting title
+                'solution_activate_empty_field',            // Error ID
+                'Something goes wrong',     // Error message
+                'error'                         // Type of message
+            );
+
+            return $valid;
+        }
+
+        global $wpdb;
+
+        $solutionTableName = $wpdb->prefix . "neulee_solutions";
+
+        $wpdb->update(
+            $solutionTableName,
+            array(
+                'solution_active' => $valid['active']
+            ),
+            array('id' => $valid['sol_id']),
+            array(
+                '%s',    // value1
+            ),
+            array('%d')
+        );
+
+        return $valid;
+
+
+    }
+
+    /**
      *
      */
     public function neulee_form_processor()
@@ -804,5 +849,8 @@ class Neulee_Admin
 
         /** delete package form */
         register_setting($this->plugin_name.'deletePackage', 'deletePackage', array($this, 'deletePackage'));
+
+        /** active/deactivate solution */
+        register_setting($this->plugin_name.'solutionActive', 'solutionActive', array($this, 'solutionActive'));
     }
 }

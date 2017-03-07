@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0e23bd99-1792-4a6b-b2cb-aea803b483c4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/css/neulee-admin.css" afterPath="$PROJECT_DIR$/admin/css/neulee-admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/partials/neulee-admin-display.php" afterPath="$PROJECT_DIR$/admin/partials/neulee-admin-display.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/class-neulee-admin.php" afterPath="$PROJECT_DIR$/admin/class-neulee-admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/partials/neulee-admin-solution.php" afterPath="$PROJECT_DIR$/admin/partials/neulee-admin-solution.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/class-neulee-public.php" afterPath="$PROJECT_DIR$/public/class-neulee-public.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,48 +30,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class-neulee-admin.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="class-neulee-admin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/class-neulee-admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="692" column="0" lean-forward="true" selection-start-line="692" selection-start-column="0" selection-end-line="692" selection-end-column="0" />
+            <state relative-caret-position="502">
+              <caret line="832" column="7" lean-forward="true" selection-start-line="832" selection-start-column="7" selection-end-line="832" selection-end-column="7" />
               <folding>
-                <marker date="1488737794781" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488737794781" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
-                <marker date="1488737794781" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
-                <marker date="1488737794781" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488737794781" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488737794781" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488737794781" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488737794781" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
-                <marker date="1488737794781" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
-                <marker date="1488737794781" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
-                <marker date="1488737794781" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
-                <marker date="1488737794781" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488914940489" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488914940489" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+                <marker date="1488914940489" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
+                <marker date="1488914940489" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488914940489" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488914940489" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488914940489" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488914940489" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
+                <marker date="1488914940489" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
+                <marker date="1488914940489" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
+                <marker date="1488914940489" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
+                <marker date="1488914940489" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="neulee-admin-solution.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="neulee-admin-solution.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/partials/neulee-admin-solution.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="110" column="62" lean-forward="false" selection-start-line="110" selection-start-column="62" selection-end-line="110" selection-end-column="62" />
+            <state relative-caret-position="122">
+              <caret line="49" column="96" lean-forward="false" selection-start-line="49" selection-start-column="82" selection-end-line="49" selection-end-column="96" />
               <folding>
                 <element signature="e#7#251#0#PHP" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#1201#1207#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#8629#8635#1#HTML" expanded="true" />
-                <element signature="e#8739#8745#1#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,8 +68,8 @@
       <file leaf-file-name="class-neulee.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/class-neulee.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2754">
-              <caret line="164" column="85" lean-forward="false" selection-start-line="164" selection-start-column="85" selection-end-line="164" selection-end-column="85" />
+            <state relative-caret-position="486">
+              <caret line="190" column="29" lean-forward="true" selection-start-line="190" selection-start-column="29" selection-end-line="190" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -100,8 +88,8 @@
       <file leaf-file-name="class-neulee-activator.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/class-neulee-activator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="265">
+              <caret line="37" column="64" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="37" selection-end-column="64" />
               <folding>
                 <element signature="e#7#161#0#PHP" expanded="true" />
                 <marker date="1488716205174" expanded="true" signature="940:1219" ph="CREATE TABLE... ${$table_name}" />
@@ -116,7 +104,7 @@
       <file leaf-file-name="neulee-admin.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/css/neulee-admin.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
+            <state relative-caret-position="1692">
               <caret line="94" column="5" lean-forward="false" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
               <folding />
             </state>
@@ -130,10 +118,6 @@
               <caret line="53" column="59" lean-forward="false" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
               <folding>
                 <element signature="e#7#251#0#PHP" expanded="true" />
-                <element signature="e#572#578#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,6 +139,8 @@
     <findStrings>
       <find>email</find>
       <find>search</find>
+      <find>select</find>
+      <find>get_re</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,10 +153,11 @@
         <option value="$PROJECT_DIR$/neulee.php" />
         <option value="$PROJECT_DIR$/includes/class-neulee.php" />
         <option value="$PROJECT_DIR$/includes/class-neulee-activator.php" />
-        <option value="$PROJECT_DIR$/admin/class-neulee-admin.php" />
         <option value="$PROJECT_DIR$/admin/partials/neulee-admin-display.php" />
         <option value="$PROJECT_DIR$/admin/css/neulee-admin.css" />
+        <option value="$PROJECT_DIR$/public/class-neulee-public.php" />
         <option value="$PROJECT_DIR$/admin/partials/neulee-admin-solution.php" />
+        <option value="$PROJECT_DIR$/admin/class-neulee-admin.php" />
       </list>
     </option>
   </component>
@@ -201,8 +188,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -380,18 +367,19 @@
       <workItem from="1488649455421" duration="4339000" />
       <workItem from="1488713635556" duration="6153000" />
       <workItem from="1488838470075" duration="277000" />
-      <workItem from="1488912438469" duration="785000" />
+      <workItem from="1488912438469" duration="1481000" />
+      <workItem from="1488914058958" duration="917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24826000" />
+    <option name="totallyTimeSpent" value="26439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="0" width="1376" height="745" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26969698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27424243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -440,14 +428,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/class-neulee-loader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/class-neulee-activator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -476,10 +456,6 @@
           <caret line="51" column="46" lean-forward="false" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
           <folding>
             <element signature="e#7#251#0#PHP" expanded="true" />
-            <element signature="e#572#578#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -489,7 +465,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -516,18 +491,18 @@
         <state relative-caret-position="3420">
           <caret line="198" column="10" lean-forward="true" selection-start-line="198" selection-start-column="10" selection-end-line="198" selection-end-column="10" />
           <folding>
-            <marker date="1488737794781" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
-            <marker date="1488737794781" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+            <marker date="1488914940489" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
         </state>
       </provider>
@@ -538,18 +513,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#251#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#1201#1207#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#8629#8635#1#HTML" expanded="true" />
-            <element signature="e#8739#8745#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -598,10 +561,6 @@
           <caret line="51" column="46" lean-forward="false" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
           <folding>
             <element signature="e#7#251#0#PHP" expanded="true" />
-            <element signature="e#572#578#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -611,7 +570,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -638,18 +596,18 @@
         <state relative-caret-position="3438">
           <caret line="191" column="60" lean-forward="false" selection-start-line="191" selection-start-column="60" selection-end-line="191" selection-end-column="60" />
           <folding>
-            <marker date="1488737794781" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
-            <marker date="1488737794781" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+            <marker date="1488914940489" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
         </state>
       </provider>
@@ -660,18 +618,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#251#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#1201#1207#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#8629#8635#1#HTML" expanded="true" />
-            <element signature="e#8739#8745#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -712,10 +658,6 @@
           <caret line="22" column="53" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="53" />
           <folding>
             <element signature="e#7#251#0#PHP" expanded="true" />
-            <element signature="e#572#578#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -732,7 +674,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -759,18 +700,18 @@
         <state relative-caret-position="2106">
           <caret line="125" column="59" lean-forward="false" selection-start-line="125" selection-start-column="59" selection-end-line="125" selection-end-column="59" />
           <folding>
-            <marker date="1488737794781" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
-            <marker date="1488737794781" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+            <marker date="1488914940489" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
         </state>
       </provider>
@@ -803,18 +744,18 @@
         <state relative-caret-position="2106">
           <caret line="125" column="59" lean-forward="false" selection-start-line="125" selection-start-column="59" selection-end-line="125" selection-end-column="59" />
           <folding>
-            <marker date="1488737794781" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
-            <marker date="1488737794781" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+            <marker date="1488914940489" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
         </state>
       </provider>
@@ -848,18 +789,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1488737794781" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
-            <marker date="1488737794781" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+            <marker date="1488914940489" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
         </state>
       </provider>
@@ -888,22 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neulee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-neulee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2754">
-          <caret line="164" column="85" lean-forward="false" selection-start-line="164" selection-start-column="85" selection-end-line="164" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/class-neulee-loader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1026">
@@ -925,9 +850,24 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/css/neulee-admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1692">
+          <caret line="94" column="5" lean-forward="false" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neulee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -937,26 +877,14 @@
           <caret line="53" column="59" lean-forward="false" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
           <folding>
             <element signature="e#7#251#0#PHP" expanded="true" />
-            <element signature="e#572#578#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/css/neulee-admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="94" column="5" lean-forward="false" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/class-neulee-activator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="265">
+          <caret line="37" column="64" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="37" selection-end-column="64" />
           <folding>
             <element signature="e#7#161#0#PHP" expanded="true" />
             <marker date="1488716205174" expanded="true" signature="940:1219" ph="CREATE TABLE... ${$table_name}" />
@@ -967,45 +895,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/class-neulee-admin.php">
+    <entry file="file://$PROJECT_DIR$/public/class-neulee-public.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="692" column="0" lean-forward="true" selection-start-line="692" selection-start-column="0" selection-end-line="692" selection-end-column="0" />
+        <state relative-caret-position="311">
+          <caret line="106" column="64" lean-forward="true" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="64" />
           <folding>
-            <marker date="1488737794781" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
-            <marker date="1488737794781" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
-            <marker date="1488737794781" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
-            <marker date="1488737794781" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914331805" expanded="true" signature="2717:2777" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-neulee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="190" column="29" lean-forward="true" selection-start-line="190" selection-start-column="29" selection-end-line="190" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/partials/neulee-admin-solution.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="110" column="62" lean-forward="false" selection-start-line="110" selection-start-column="62" selection-end-line="110" selection-end-column="62" />
+        <state relative-caret-position="122">
+          <caret line="49" column="96" lean-forward="false" selection-start-line="49" selection-start-column="82" selection-end-line="49" selection-end-column="96" />
           <folding>
             <element signature="e#7#251#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#1201#1207#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#8629#8635#1#HTML" expanded="true" />
-            <element signature="e#8739#8745#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/class-neulee-admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="832" column="7" lean-forward="true" selection-start-line="832" selection-start-column="7" selection-end-line="832" selection-end-column="7" />
+          <folding>
+            <marker date="1488914940489" expanded="true" signature="4743:4757" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="4906:4920" ph="SELECT * FRO... ${$solutionList}" />
+            <marker date="1488914940489" expanded="true" signature="5082:5096" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5242:5256" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5637:5651" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="5637:5666" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10778" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10794" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="10706:10816" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="11828:11842" ph="SELECT * FRO... ${$packageTableName}" />
+            <marker date="1488914940489" expanded="true" signature="12495:12559" ph="SELECT * FRO... ${$loginTableName}" />
+            <marker date="1488914940489" expanded="true" signature="21027:21092" ph="SELECT * FRO... ${$loginTableName}" />
           </folding>
         </state>
       </provider>
