@@ -19,7 +19,7 @@
  *
  * @package    Neulee
  * @subpackage Neulee/includes
- * @author     luca <luca@neulee.com>
+ * @author     luca <luca.magistrelli@neulee.com>
  */
 class Neulee_Loader {
 

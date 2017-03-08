@@ -45,31 +45,35 @@
                         <div class="rTableCell"><?php echo $solution->provider_url; ?></div>
                         <div class="rTableCell">
                             <form method="post" name="generate" action="options.php">
-                                <fieldset>
-                                    <label>
-                                        <?php settings_fields($this->plugin_name.'solutionActive'); ?>
-                                        <input type="hidden" class="<?php echo $this->plugin_name; ?>-id"
-                                               id="<?php echo $this->plugin_name; ?>-id"
-                                               name="<?php echo 'solutionActive'; ?>[sol_id]"
-                                               value="<?php echo $solution->id; ?>"/>
-                                        <select id="<?php echo $this->plugin_name; ?>-status"
-                                                name="<?php echo 'solutionActive'; ?>[status]"
-                                        >
-                                            <option value="Y" <?php echo $solution->solution_active == 'Y' ? 'selected' : ''; ?>>
-                                                Active
-                                            </option>
-                                            <option value="N" <?php echo $solution->solution_active == 'N' ? 'selected' : ''; ?>>
-                                                Not active
-                                            </option>
-                                        </select>
-                                        <?php submit_button(
-                                            __('Save', $this->plugin_name),
-                                            'primary',
-                                            'submit',
-                                            true
-                                        ); ?>
-                                    </label>
-                                </fieldset>
+                                <div class="rTable">
+                                    <div class="rTableRow">
+                                        <div class="rTableCell">
+                                            <?php settings_fields($this->plugin_name.'solutionActive'); ?>
+                                            <input type="hidden" class="<?php echo $this->plugin_name; ?>-id"
+                                                   id="<?php echo $this->plugin_name; ?>-id"
+                                                   name="<?php echo 'solutionActive'; ?>[sol_id]"
+                                                   value="<?php echo $solution->id; ?>"/>
+                                            <select id="<?php echo $this->plugin_name; ?>-status"
+                                                    name="<?php echo 'solutionActive'; ?>[status]"
+                                            >
+                                                <option value="Y" <?php echo $solution->solution_active == 'Y' ? 'selected' : ''; ?>>
+                                                    Active
+                                                </option>
+                                                <option value="N" <?php echo $solution->solution_active == 'N' ? 'selected' : ''; ?>>
+                                                    Not active
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="rTableCell">
+                                            <?php submit_button(
+                                                __('Save', $this->plugin_name),
+                                                'primary',
+                                                'submit',
+                                                true
+                                            ); ?>
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -115,14 +119,14 @@
                                             <input type="hidden" class="<?php echo $this->plugin_name; ?>-fullname"
                                                    id="<?php echo $this->plugin_name; ?>-fullname"
                                                    name="<?php echo 'deletePackage'; ?>[fullname]"
-                                                   value="<?php echo $package->package; ?>"/>
+                                                   value="<?php echo $solPackage->package; ?>"/>
                                             <input type="hidden" class="<?php echo $this->plugin_name; ?>-version"
                                                    id="<?php echo $this->plugin_name; ?>-version"
                                                    name="<?php echo 'deletePackage'; ?>[version]"
-                                                   value="<?php echo $package->version; ?>"/>
+                                                   value="<?php echo $solPackage->version; ?>"/>
                                             <?php submit_button(
                                                 __('Delete', $this->plugin_name),
-                                                'primary',
+                                                'secondary',
                                                 'submit',
                                                 true
                                             ); ?>
@@ -133,9 +137,6 @@
                             }
                             ?>
                         </div>
-                        <?php
-                        }
-                        ?>
                     </div>
                     <form method="post" name="generate" action="options.php">
                         <?php
@@ -159,71 +160,83 @@
                         <?php } ?>
                         <?php submit_button(__('Generate', $this->plugin_name), 'primary', 'submit', true); ?>
                     </form>
-                </div>
-            </div>
-            <div class="rTableCell" style="width: 50%">
-
-
-                <h2 class="nav-tab-wrapper"><?php _e('Search packages', $this->plugin_name.'packages'); ?></h2>
-                <div class="nlpanel">
-                    <form method="post" name="login" action="options.php">
-                        <?php settings_fields($this->plugin_name.'search'); ?>
-                        <?php
-                        //Grab all options
-                        $options = get_option($this->plugin_name.'search');
-
-                        // Cleanup
-                        $term = $options['term'];
-                        ?>
-                        <fieldset class="searchFieldset">
-                            <legend class="screen-reader-text"><span><?php _e('term', $this->plugin_name); ?></span>
-                            </legend>
-                            <label for="<?php echo $this->plugin_name; ?>-term">
-                                <span><?php esc_attr_e('Term', $this->plugin_name); ?></span>
-                                <input type="text" class="<?php echo $this->plugin_name; ?>-term"
-                                       id="<?php echo $this->plugin_name; ?>-term" name="<?php echo 'search'; ?>[term]"
-                                       value="<?php echo $term; ?>"/>
-                            </label>
-                        </fieldset>
-                        <?php submit_button(__('Search', $this->plugin_name), 'primary', 'submit', true); ?>
-                    </form>
                     <?php
-                    if (!empty($packageList)) {
-                        foreach ($packageList as $package) {
-                            ?>
-                            <div class="resultbox" style="  text-align: center;">
-                                <form method="post" name="login" action="options.php" id="packageform">
-                                    <?php settings_fields($this->plugin_name.'solution'); ?>
-                                    <fieldset class="wp_cbf-admin-colors">
-                                        <label>
-                                            <h3><?php echo $package->package_name; ?></h3>
-                                            <span>Repository</span><b>&nbsp;<?php echo $package->package; ?></b>
-                                            <span>Version</span><b>&nbsp;<?php echo $package->version; ?></b>
-                                        </label>
-                                    </fieldset>
-                                    <input type="hidden" class="<?php echo $this->plugin_name; ?>-fullname"
-                                           id="<?php echo $this->plugin_name; ?>-fullname"
-                                           name="<?php echo 'solution'; ?>[fullname]"
-                                           value="<?php echo $package->package; ?>"/>
-                                    <input type="hidden" class="<?php echo $this->plugin_name; ?>-version"
-                                           id="<?php echo $this->plugin_name; ?>-version"
-                                           name="<?php echo 'solution'; ?>[version]"
-                                           value="<?php echo $package->version; ?>"/>
-                                    <p class="addP">
-                                        <?php submit_button(
-                                            __('Add to solution', $this->plugin_name),
-                                            'primary',
-                                            'submit',
-                                            true
-                                        ); ?>
-                                    </p>
-                                </form>
-                            </div>
-                            <?php
-                        }
                     }
+                    else
+                    {
                     ?>
+                    <p>Start to create your own solution by searching the packages you prefer using the right box</p>
                 </div>
             </div>
+            <?php
+            }
+            ?>
+
         </div>
     </div>
+    <div class="rTableCell" style="width: 50%">
+
+
+        <h2 class="nav-tab-wrapper"><?php _e('Search packages', $this->plugin_name.'packages'); ?></h2>
+        <div class="nlpanel">
+            <form method="post" name="login" action="options.php">
+                <?php settings_fields($this->plugin_name.'search'); ?>
+                <?php
+                //Grab all options
+                $options = get_option($this->plugin_name.'search');
+
+                // Cleanup
+                $term = $options['term'];
+                ?>
+                <fieldset class="searchFieldset">
+                    <legend class="screen-reader-text"><span><?php _e('term', $this->plugin_name); ?></span>
+                    </legend>
+                    <label for="<?php echo $this->plugin_name; ?>-term">
+                        <span><?php esc_attr_e('Term', $this->plugin_name); ?></span>
+                        <input type="text" class="<?php echo $this->plugin_name; ?>-term"
+                               id="<?php echo $this->plugin_name; ?>-term" name="<?php echo 'search'; ?>[term]"
+                               value="<?php echo $term; ?>"/>
+                    </label>
+                </fieldset>
+                <?php submit_button(__('Search', $this->plugin_name), 'primary', 'submit', true); ?>
+            </form>
+            <?php
+            if (!empty($packageList)) {
+                foreach ($packageList as $package) {
+                    ?>
+                    <div class="resultbox" style="  text-align: center;">
+                        <form method="post" name="login" action="options.php" id="packageform">
+                            <?php settings_fields($this->plugin_name.'solution'); ?>
+                            <fieldset class="wp_cbf-admin-colors">
+                                <label>
+                                    <h3><?php echo $package->package_name; ?></h3>
+                                    <span>Repository</span><b>&nbsp;<?php echo $package->package; ?></b>
+                                    <span>Version</span><b>&nbsp;<?php echo $package->version; ?></b>
+                                </label>
+                            </fieldset>
+                            <input type="hidden" class="<?php echo $this->plugin_name; ?>-fullname"
+                                   id="<?php echo $this->plugin_name; ?>-fullname"
+                                   name="<?php echo 'solution'; ?>[fullname]"
+                                   value="<?php echo $package->package; ?>"/>
+                            <input type="hidden" class="<?php echo $this->plugin_name; ?>-version"
+                                   id="<?php echo $this->plugin_name; ?>-version"
+                                   name="<?php echo 'solution'; ?>[version]"
+                                   value="<?php echo $package->version; ?>"/>
+                            <p class="addP">
+                                <?php submit_button(
+                                    __('Add to solution', $this->plugin_name),
+                                    'primary',
+                                    'submit',
+                                    true
+                                ); ?>
+                            </p>
+                        </form>
+                    </div>
+                    <?php
+                }
+            }
+            ?>
+        </div>
+    </div>
+</div>
+</div>

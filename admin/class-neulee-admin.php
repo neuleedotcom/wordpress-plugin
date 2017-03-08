@@ -18,7 +18,7 @@
  *
  * @package    Neulee
  * @subpackage Neulee/admin
- * @author     luca <luca@neulee.com>
+ * @author     luca <luca.magistrelli@neulee.com>
  */
 class Neulee_Admin
 {
@@ -26,6 +26,7 @@ class Neulee_Admin
     const neulee_login_url    = 'http://neulee.com/api/login';
     const neulee_search_url   = 'http://neulee.com/api/search';
     const neulee_generate_url = 'http://neulee.com/api/generate';
+    const neulee_register_url = 'http://neulee.com/api/register';
 
     /**
      * The ID of this plugin.
@@ -68,19 +69,6 @@ class Neulee_Admin
      */
     public function enqueue_styles()
     {
-
-        /**
-         * This function is provided for demonstration purposes only.
-         *
-         * An instance of this class should be passed to the run() function
-         * defined in Neulee_Loader as all of the hooks are defined
-         * in that particular class.
-         *
-         * The Neulee_Loader will then create the relationship
-         * between the defined hooks and the functions defined in this
-         * class.
-         */
-
         wp_enqueue_style(
             $this->plugin_name,
             plugin_dir_url(__FILE__).'css/neulee-admin.css',
@@ -98,27 +86,7 @@ class Neulee_Admin
      */
     public function enqueue_scripts()
     {
-
-        /**
-         * This function is provided for demonstration purposes only.
-         *
-         * An instance of this class should be passed to the run() function
-         * defined in Neulee_Loader as all of the hooks are defined
-         * in that particular class.
-         *
-         * The Neulee_Loader will then create the relationship
-         * between the defined hooks and the functions defined in this
-         * class.
-         */
-
-        wp_enqueue_script(
-            $this->plugin_name,
-            plugin_dir_url(__FILE__).'js/neulee-admin.js',
-            array('jquery'),
-            $this->version,
-            false
-        );
-
+        //Nothing to do here for now
     }
 
 
@@ -207,7 +175,7 @@ class Neulee_Admin
 
         $solPackageTableName = $wpdb->prefix."neulee_packages";
 
-        $solutionPackageList =  $wpdb->get_results(
+        $solutionPackageList = $wpdb->get_results(
             "SELECT * FROM $solPackageTableName"
 
         );
@@ -371,8 +339,6 @@ class Neulee_Admin
         }
 
 
-
-
         return $valid;
     }
 
@@ -388,8 +354,7 @@ class Neulee_Admin
         $valid['fullname'] = sanitize_text_field($input['fullname']);
         $valid['version'] = sanitize_text_field($input['version']);
 
-        if(empty($valid['fullname']))
-        {
+        if (empty($valid['fullname'])) {
             add_settings_error(
                 'login_empty_field',                     // Setting title
                 'login_empty_field_error',            // Error ID
@@ -451,8 +416,7 @@ class Neulee_Admin
             "SELECT * FROM $packageTableName "
         );
 
-        if(empty($packages) || count($packages) == 0)
-        {
+        if (empty($packages) || count($packages) == 0) {
             add_settings_error(
                 'generate_neulee_error',                     // Setting title
                 'generate_neulee_error_empty_packages',            // Error ID
@@ -463,8 +427,7 @@ class Neulee_Admin
             return $valid;
         }
 
-        if(!empty($valid['user']))
-        {
+        if (!empty($valid['user'])) {
 
 
             $loginTableName = $wpdb->prefix."neulee_login";
@@ -473,8 +436,7 @@ class Neulee_Admin
                 "SELECT * FROM $loginTableName WHERE email = '".$valid['user']."'"
             );
 
-            if(empty($userFetch))
-            {
+            if (empty($userFetch)) {
                 add_settings_error(
                     'generate_neulee_error',                     // Setting title
                     'generate_neulee_error_user_not_found',            // Error ID
@@ -536,10 +498,9 @@ class Neulee_Admin
 
             $token = $data['token'];
 
-            if(empty($token))
-            {
+            if (empty($token)) {
                 add_settings_error(
-                'generate_login_neulee_error',                     // Setting title
+                    'generate_login_neulee_error',                     // Setting title
                     'generate_login_neulee_error',            // Error ID
                     'User token is empty',     // Error message
                     'error'
@@ -553,8 +514,7 @@ class Neulee_Admin
 
         $packagesJson = [];
 
-        foreach($packages as $package)
-        {
+        foreach ($packages as $package) {
             $temp['fullname'] = $package->package;
             $temp['version'] = $package->version;
 
@@ -565,11 +525,10 @@ class Neulee_Admin
 
         $postBody['packages'] = $packagesJson;
 
-        if(!empty($token))
-        {
+
+        if (!empty($token)) {
             $postBody['token'] = $token;
         }
-
 
         $response = wp_remote_post(
             self::neulee_generate_url,
@@ -624,12 +583,12 @@ class Neulee_Admin
             array(
                 'solution_url' => $solutionUrl,
                 'provider_url' => $providerUrl,
-                'solution_active' => 'Y'
+                'solution_active' => 'Y',
             ),
             array(
                 '%s',
                 '%s',
-                '%s'
+                '%s',
             )
         );
 
@@ -649,8 +608,7 @@ class Neulee_Admin
         $valid['fullname'] = sanitize_text_field($input['fullname']);
         $valid['version'] = sanitize_text_field($input['version']);
 
-        if(empty($valid['fullname']))
-        {
+        if (empty($valid['fullname'])) {
             add_settings_error(
                 'login_empty_field',                     // Setting title
                 'login_empty_field_error',            // Error ID
@@ -665,7 +623,11 @@ class Neulee_Admin
 
         $packageTableName = $wpdb->prefix."neulee_packages";
 
-        $wpdb->delete($packageTableName, array( 'package' => $valid['fullname'], 'version' => $valid['version'] ), array('%s', '%s') );
+        $wpdb->delete(
+            $packageTableName,
+            array('package' => $valid['fullname'], 'version' => $valid['version']),
+            array('%s', '%s')
+        );
 
         return $valid;
     }
@@ -790,6 +752,134 @@ class Neulee_Admin
      *
      * @return array
      */
+    public function register($input)
+    {
+        $valid = [];
+
+        $valid['firstname'] = sanitize_text_field($input['firstname']);
+        $valid['lastname'] = sanitize_text_field($input['lastname']);
+        $valid['email'] = sanitize_text_field($input['email']);
+        $valid['password'] = sanitize_text_field($input['password']);
+        $valid['repeatpassword'] = sanitize_text_field($input['repeatpassword']);
+
+
+        if (empty($valid['email']) || empty($valid['password']) || empty($valid['firstname']) || empty($valid['lastname']) || empty($valid['repeatpassword'])) { // if user insert a HEX color with #
+            add_settings_error(
+                'register_empty_field',                     // Setting title
+                'register_empty_field_error',            // Error ID
+                'Please fill all the fields',     // Error message
+                'error'                         // Type of message
+            );
+
+            return $valid;
+        }
+
+        $postBody = [
+            'firstname' => $valid['firstname'],
+            'lastname' => $valid['lastname'],
+            'email' => $valid['email'],
+            'password' => $valid['password'],
+            'repeatpassword' => $valid['repeatpassword'],
+        ];
+
+        $response = wp_remote_post(
+            self::neulee_register_url,
+            array(
+                'method' => 'POST',
+                'timeout' => 45,
+                'redirection' => 5,
+                'httpversion' => '1.0',
+                'blocking' => true,
+                'headers' => array('Content-Type' => 'application/json; charset=utf-8'),
+                'body' => json_encode($postBody),
+                'cookies' => array(),
+            )
+        );
+
+
+        if (is_wp_error($response)) {
+            $error_message = $response->get_error_message();
+
+            add_settings_error(
+                'login_neulee_error',                     // Setting title
+                'login_neulee_error',            // Error ID
+                $error_message,     // Error message
+                'error'                         // Type of message
+            );
+
+            return $valid;
+        }
+
+        $response = wp_remote_retrieve_body($response);
+
+        $data = json_decode($response, true);
+
+        if ($data['status'] != 'success') {
+            add_settings_error(
+                'register_neulee_error',                     // Setting title
+                'register_neulee_error',            // Error ID
+                $data['reason'],     // Error message
+                'error'                         // Type of message
+            );
+
+            return $valid;
+
+        }
+        global $wpdb;
+
+
+        $loginTableName = $wpdb->prefix."neulee_login";
+
+        $wpdb->insert(
+            $loginTableName,
+            array(
+                'email' => $valid['email'],
+                'password' => $valid['password'],
+            ),
+            array(
+                '%s',
+                '%s',
+            )
+        );
+
+
+        return $valid;
+    }
+
+    /**
+     * @param $input
+     *
+     * @return array
+     */
+    public function userDelete($input)
+    {
+        $valid['user_id'] = (int)$input['user_id'];
+
+        if (empty($valid['user_id'])) {
+            add_settings_error(
+                'user_delete_empty_field',                     // Setting title
+                'user_delete_empty_field',            // Error ID
+                'Something goes wrong',     // Error message
+                'error'                         // Type of message
+            );
+
+            return $valid;
+        }
+
+        global $wpdb;
+
+        $loginTableName = $wpdb->prefix."neulee_login";
+
+        $wpdb->delete($loginTableName, array('id' => $valid['user_id']), array('%d'));
+
+        return $valid;
+    }
+
+    /**
+     * @param $input
+     *
+     * @return array
+     */
     public function solutionActive($input)
     {
         $valid = [];
@@ -811,12 +901,12 @@ class Neulee_Admin
 
         global $wpdb;
 
-        $solutionTableName = $wpdb->prefix . "neulee_solutions";
+        $solutionTableName = $wpdb->prefix."neulee_solutions";
 
         $wpdb->update(
             $solutionTableName,
             array(
-                'solution_active' => $valid['active']
+                'solution_active' => $valid['active'],
             ),
             array('id' => $valid['sol_id']),
             array(
@@ -826,8 +916,6 @@ class Neulee_Admin
         );
 
         return $valid;
-
-
     }
 
     /**
@@ -852,5 +940,11 @@ class Neulee_Admin
 
         /** active/deactivate solution */
         register_setting($this->plugin_name.'solutionActive', 'solutionActive', array($this, 'solutionActive'));
+
+        /** user register */
+        register_setting($this->plugin_name.'register', 'register', array($this, 'register'));
+
+        /** user register */
+        register_setting($this->plugin_name.'userDelete', 'userDelete', array($this, 'userDelete'));
     }
 }

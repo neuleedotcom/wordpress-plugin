@@ -20,7 +20,7 @@ require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
  * @since      1.0.0
  * @package    Neulee
  * @subpackage Neulee/includes
- * @author     luca <luca@neulee.com>
+ * @author     luca <luca.magistrelli@neulee.com>
  */
 class Neulee_Activator {
 
